@@ -35,9 +35,7 @@ class DemoActivity : AppCompatActivity() {
 
         btnGoToWelcome.setOnClickListener {
 
-
             val i = Intent(this, WelcomeActivity::class.java)
-
             startActivity(i)
             onStop()
         }
