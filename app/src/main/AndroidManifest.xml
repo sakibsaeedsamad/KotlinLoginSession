@@ -18,8 +18,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
 
-                <action android:name="android.intent.action.ACTION_SCREEN_ON"></action>
-                <action android:name="android.intent.action.ACTION_SCREEN_OFF"></action>
+                <action android:name="android.intent.action.ACTION_SCREEN_ON" />
+                <action android:name="android.intent.action.ACTION_SCREEN_OFF" />
 
             </intent-filter>
         </activity>

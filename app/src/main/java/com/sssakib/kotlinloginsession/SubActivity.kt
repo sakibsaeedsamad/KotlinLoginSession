@@ -5,23 +5,24 @@ import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 
+//No need for this function
 open class SubActivity : AppCompatActivity() {
     var myRunnable: Runnable
     private var myHandler = Handler()
     val DISCONNECT_TIMEOUT: Long = 10000
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-        val intentFilter = IntentFilter(Intent.ACTION_SCREEN_OFF)
-        registerReceiver(object : BroadcastReceiver() {
-            override fun onReceive(context: Context?, intent: Intent) {
-                if (intent.action == Intent.ACTION_SCREEN_OFF) {
-                    start()
-                }
-            }
-        }, intentFilter)
-    }
+//    override fun onCreate(savedInstanceState: Bundle?) {
+//        super.onCreate(savedInstanceState)
+//
+//        val intentFilter = IntentFilter(Intent.ACTION_SCREEN_OFF)
+//        registerReceiver(object : BroadcastReceiver() {
+//            override fun onReceive(context: Context?, intent: Intent) {
+//                if (intent.action == Intent.ACTION_SCREEN_OFF) {
+//                    start()
+//                }
+//            }
+//        }, intentFilter)
+//    }
 
     init {
         myRunnable = Runnable {
